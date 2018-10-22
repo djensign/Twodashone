@@ -10,4 +10,6 @@ public interface Engine {
   public void setDriveTrain(String driveTrain);
   public void setEngineType(String fuel);
 
+
+  public final String generic = "Generic";
 }
