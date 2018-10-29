@@ -12,8 +12,8 @@ public class VehicleFrame implements Chassis {
   }
 
   public Chassis getChassisType() {
-  return this;
-}
+    return this;
+  }
 
   public void setChassisType(String vehicleFrameType) {
 

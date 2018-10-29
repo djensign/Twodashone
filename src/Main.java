@@ -1,9 +1,9 @@
 public class Main {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     VehicleChassis myChassis = new VehicleChassis();
-    VehicleChassis yourChassis = new VehicleChassis( "cn");
+    VehicleChassis yourChassis = new VehicleChassis("cn");
 
     VehicleFrame myVehicle = new VehicleFrame();
 
