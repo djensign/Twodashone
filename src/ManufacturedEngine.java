@@ -2,13 +2,13 @@ import java.util.Date;
 
 public class ManufacturedEngine implements Engine {
 
-  String engineManufacturer;
-  Date engineManufacturedDate;
-  String engineMake;
-  String engineModel;
-  int engineCylinders;
-  String engineType;
-  String driveTrain;
+  private String engineManufacturer;
+  private Date engineManufacturedDate;
+  private String engineMake;
+  private String engineModel;
+  private int engineCylinders;
+  private String engineType;
+  private String driveTrain;
 
 
   public ManufacturedEngine() {
@@ -18,7 +18,7 @@ public class ManufacturedEngine implements Engine {
     this.engineMake = generic;
     this.engineModel = generic;
     this.engineCylinders = 0;
-    this.engineType = "85 AKI";
+    this.engineType = generic;
     this.driveTrain = "2WD: Two-wheel drives";
   }
 
@@ -36,36 +36,49 @@ public class ManufacturedEngine implements Engine {
 
   @Override
   public void setEngineCylinders(int engineCylinders) {
-
+    System.out.println(engineCylinders);
   }
 
   @Override
   public void setEngineManufacturedDate(Date date) {
-
+    System.out.println(engineManufacturedDate);
   }
 
   @Override
   public void setEngineManufacturer(String manufacturer) {
-
+    System.out.println(manufacturer);
   }
 
   @Override
   public void setEngineMake(String engineMake) {
-
+    System.out.println(engineMake);
   }
 
   @Override
   public void setEngineModel(String engineModel) {
-
+    System.out.println(engineModel);
   }
 
   @Override
   public void setDriveTrain(String driveTrain) {
-
+    System.out.println(driveTrain);
   }
 
   @Override
-  public void setEngineType(String fuel) {
+  public void setEngineType(String engineType) {
+    System.out.println(engineType);
+  }
 
+  @Override
+  public String toString() {
+    return "ManufacturedEngine{" +
+            "engineManufacturer='" + engineManufacturer + '\'' +
+            ", engineManufacturedDate=" + engineManufacturedDate +
+            ", engineMake='" + engineMake + '\'' +
+            ", engineModel='" + engineModel + '\'' +
+            ", engineCylinders=" + engineCylinders +
+            ", engineType='" + engineType + '\'' +
+            ", driveTrain='" + driveTrain + '\'' +
+            '}';
   }
 }
