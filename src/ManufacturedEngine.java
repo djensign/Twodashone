@@ -14,7 +14,7 @@ public class ManufacturedEngine implements Engine {
   public ManufacturedEngine() {
 
     this.engineManufacturer = generic;
-    this.engineManufacturedDate = Date;
+    this.engineManufacturedDate = new Date();
     this.engineMake = generic;
     this.engineModel = generic;
     this.engineCylinders = 0;
