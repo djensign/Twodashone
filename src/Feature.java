@@ -1,7 +1,7 @@
 public interface Feature {
 
-    public String getFeature();
+  String getFeature();
 
-    public void setFeature(String feature);
+  void setFeature(String feature);
 
 }

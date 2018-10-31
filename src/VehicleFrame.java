@@ -1,26 +1,29 @@
 public class VehicleFrame implements Chassis {
 
-  public String vehicleFrameType;
+    public String vehicleFrameType;
 
-  public VehicleFrame() {
+    public VehicleFrame() {
 
-    this.vehicleFrameType = "Unibody";
-  }
+        this.vehicleFrameType = Engine.generic;
+    }
 
-  public VehicleFrame(String vehicleFrameType) {
-    this.vehicleFrameType = vehicleFrameType;
-  }
+    public VehicleFrame(String vehicleFrameType) {
 
-  public Chassis getChassisType() {
-    return this;
-  }
+        this.vehicleFrameType = vehicleFrameType;
+    }
 
-  public void setChassisType(String vehicleFrameType) {
+    public Chassis getChassisType() {
 
-    this.vehicleFrameType = vehicleFrameType;
-  }
+        return this;
+    }
 
-  public String toString() {
-    return "Chassis : " + chassis + "\n" + "Vehicle Frame : " + vehicleFrameType;
-  }
+    public void setChassisType(String vehicleFrameType) {
+
+        this.vehicleFrameType = vehicleFrameType;
+    }
+
+    public String toString() {
+
+        return "Chassis : " + chassis + "\n" + "Vehicle Frame : " + vehicleFrameType;
+    }
 }

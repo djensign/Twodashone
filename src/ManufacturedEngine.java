@@ -19,11 +19,11 @@ public class ManufacturedEngine implements Engine {
     this.engineModel = generic;
     this.engineCylinders = 0;
     this.engineType = generic;
-    this.driveTrain = "2WD: Two-wheel drives";
+    this.driveTrain = "2WD: Two-wheel drive";
   }
 
   public ManufacturedEngine(String engineManufacturer, Date engineManufacturedDate,
-      String engineMake, String engineModel, int engineCylinders, String engineType,
+      String engineMake, String engineModel, String engineType, int engineCylinders,
       String driveTrain) {
     this.engineManufacturer = engineManufacturer;
     this.engineManufacturedDate = engineManufacturedDate;
@@ -72,13 +72,13 @@ public class ManufacturedEngine implements Engine {
   @Override
   public String toString() {
     return "ManufacturedEngine{" +
-            "engineManufacturer='" + engineManufacturer + '\'' +
-            ", engineManufacturedDate=" + engineManufacturedDate +
-            ", engineMake='" + engineMake + '\'' +
-            ", engineModel='" + engineModel + '\'' +
-            ", engineCylinders=" + engineCylinders +
-            ", engineType='" + engineType + '\'' +
-            ", driveTrain='" + driveTrain + '\'' +
-            '}';
+        "engineManufacturer='" + engineManufacturer + '\'' +
+        ", engineManufacturedDate=" + engineManufacturedDate +
+        ", engineMake='" + engineMake + '\'' +
+        ", engineModel='" + engineModel + '\'' +
+        ", engineCylinders=" + engineCylinders +
+        ", engineType='" + engineType + '\'' +
+        ", driveTrain='" + driveTrain + '\'' +
+        '}';
   }
 }

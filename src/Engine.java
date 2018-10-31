@@ -16,6 +16,5 @@ public interface Engine {
 
   public void setEngineType(String fuel);
 
-
   public final String generic = "Generic";
 }
