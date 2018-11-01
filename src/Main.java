@@ -6,10 +6,10 @@ public class Main {
 
     testVehicleChassis();
     testVehicleFrame();
-    //testManufacturedEngine();
+    testManufacturedEngine();
     testFeatures();
-    //testVehicle();
-    //testCar();
+    testVehicle();
+    testCar();
   }
 
   public static void testVehicleChassis() {
