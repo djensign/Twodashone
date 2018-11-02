@@ -1,20 +1,29 @@
 import java.util.Arrays;
+import java.util.Date;
 
 public class Car extends Vehicle {
 
   private Feature[] feature = new Feature[10];
   private int carAxle;
 
-  public Car() {
-    super();
-    this.feature = null;
-    this.carAxle = 0;
-  }
-
   public Car(Feature[] feature, int carAxle) {
-    super();
     this.feature = feature;
     this.carAxle = carAxle;
+  }
+
+  public Car(Date vehicleManufacturedDate, String honda, String prelude, String coupe, VehicleChassis unibody,
+      String aNull, String type, ManufacturedEngine manufacturedEngine, Feature[] f,
+      int carAxle) {
+
+    this.vehicleManufacturedDate = new Date();
+    this.vehicleManufacturer = generic;
+    this.vehicleMake = generic;
+    this.vehicleModel = generic;
+    this.vehicleFrame = setChassisType(generic);
+    this.vehicleType = generic;
+    this.driveTrain = generic;
+    this.vehicleEngine = generic;
+
   }
 
   public void getExteriorFeatures() {
@@ -22,6 +31,7 @@ public class Car extends Vehicle {
   }
 
   public void getInteriorFeatures() {
+
     System.out.println(Arrays.toString(feature));
   }
 

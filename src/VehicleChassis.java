@@ -20,9 +20,10 @@ public class VehicleChassis implements Chassis {
     return this;
   }
 
-  public void setChassisType(String vehicleChassis) {
+  public Chassis setChassisType(String vehicleChassis) {
 
     chassisName = vehicleChassis;
+    return null;
   }
 
   public String toString() {

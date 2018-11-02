@@ -1,10 +1,10 @@
 public interface Chassis {
 
-  public final String chassis = "Chassis";
+  String chassis = "Chassis";
 
-  public Chassis getChassisType();
+  Chassis getChassisType();
 
-  public void setChassisType(String vehicleChassis);
+  Chassis setChassisType(String vehicleChassis);
 
 
 }

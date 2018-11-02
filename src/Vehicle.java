@@ -2,14 +2,14 @@ import java.util.Date;
 
 public class Vehicle implements Engine, Chassis {
 
-  private Date vehicleManufacturedDate;
-  private String vehicleManufacturer;
-  private String vehicleMake;
-  private String vehicleModel;
-  private Chassis vehicleFrame;
-  private String vehicleType;
-  private String driveTrain;
-  private Engine vehicleEngine;
+  public Date vehicleManufacturedDate;
+  public String vehicleManufacturer;
+  public String vehicleMake;
+  public String vehicleModel;
+  public Chassis vehicleFrame;
+  public String vehicleType;
+  public String driveTrain;
+  public Engine vehicleEngine;
 
 
   public Vehicle() {
@@ -17,10 +17,10 @@ public class Vehicle implements Engine, Chassis {
     this.vehicleManufacturer = generic;
     this.vehicleMake = generic;
     this.vehicleModel = generic;
-    this.vehicleFrame = generic;
+    this.vehicleFrame = setChassisType(generic);
     this.vehicleType = generic;
     this.driveTrain = generic;
-    this.vehicleEngine = generic;
+    this.vehicleEngine = ;
   }
 
   public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer, String vehicleMake,
@@ -79,8 +79,9 @@ public class Vehicle implements Engine, Chassis {
   }
 
   @Override
-  public void setChassisType(String vehicleChassis) {
+  public Chassis setChassisType(String vehicleChassis) {
     System.out.println(vehicleChassis);
+    return null;
   }
 
   @Override
