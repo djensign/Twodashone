@@ -15,19 +15,17 @@ public class InteriorFeature implements Feature {
   @Override
   public String getFeature() {
 
-    return null;  //Return instance of a string?
+    return this.interiorFeature;
   }
 
   @Override
   public void setFeature(String feature) {
 
-    System.out.println(interiorFeature);
+    this.interiorFeature = feature;
   }
 
   @Override
   public String toString() {
-    return "InteriorFeature{" +
-        "interiorFeature='" + interiorFeature + '\'' +
-        '}';
+    return "Interior [" + interiorFeature + "]";
   }
 }

@@ -64,7 +64,7 @@ public class Main {
     Vehicle v1 = new Vehicle();
     System.out.println(v1);
 
-    Vehicle v2 = new Vehicle(new Date(), "Honda", "Prelude", "Coupe",
+    Vehicle v2 = new Vehicle("Honda", new Date(), "Prelude", "Coupe",
         new VehicleChassis("Unibody"), "null", "type",
         new ManufacturedEngine("Honda", new Date(), "H-series",
             "H23A1", "88 AKI", 4, "2WD: Two-Wheel Drive"));
@@ -85,7 +85,7 @@ public class Main {
         , new ExteriorFeature("Moonroof")};
 
     // Create an overloaded Car instance.
-    Car c2 = new Car(new Date(), "Honda", "Prelude", "Coupe",
+    Car c2 = new Car("Honda", new Date(), "Prelude", "Coupe",
         new VehicleChassis("Unibody"),
         "null", "type",
         new ManufacturedEngine("Honda", new Date(), "H-series",

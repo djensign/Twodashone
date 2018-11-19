@@ -7,24 +7,25 @@ public class ExteriorFeature implements Feature {
   }
 
   public ExteriorFeature(String exteriorFeature) {
+
     this.exteriorFeature = exteriorFeature;
   }
 
 
   @Override
   public String getFeature() {
-    return Engine.generic;
+
+    return this.exteriorFeature;
   }
 
   @Override
   public void setFeature(String feature) {
-    System.out.println(exteriorFeature);
+
+    this.exteriorFeature = feature;
   }
 
   @Override
   public String toString() {
-    return "ExteriorFeature{" +
-        "exteriorFeature='" + exteriorFeature + '\'' +
-        '}';
+    return "Exterior [" + exteriorFeature + "]";
   }
 }

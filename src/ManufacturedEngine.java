@@ -19,7 +19,7 @@ public class ManufacturedEngine implements Engine {
     this.engineModel = generic;
     this.engineCylinders = 0;
     this.engineType = generic;
-    this.driveTrain = "2WD: Two-wheel drive";
+    this.driveTrain = generic;
   }
 
   public ManufacturedEngine(String engineManufacturer, Date engineManufacturedDate,
@@ -29,56 +29,61 @@ public class ManufacturedEngine implements Engine {
     this.engineManufacturedDate = engineManufacturedDate;
     this.engineMake = engineMake;
     this.engineModel = engineModel;
-    this.engineCylinders = engineCylinders;
     this.engineType = engineType;
+    this.engineCylinders = engineCylinders;
     this.driveTrain = driveTrain;
   }
 
   @Override
   public void setEngineCylinders(int engineCylinders) {
-    System.out.println(engineCylinders);
+
+    this.engineCylinders = engineCylinders;
   }
 
   @Override
   public void setEngineManufacturedDate(Date date) {
-    System.out.println(engineManufacturedDate);
+
+    this.engineManufacturedDate = date;
   }
 
   @Override
   public void setEngineManufacturer(String manufacturer) {
-    System.out.println(manufacturer);
+
+    this.engineManufacturer = manufacturer;
   }
 
   @Override
   public void setEngineMake(String engineMake) {
-    System.out.println(engineMake);
+
+    this.engineMake = engineMake;
   }
 
   @Override
   public void setEngineModel(String engineModel) {
-    System.out.println(engineModel);
+
+    this.engineModel = engineModel;
   }
 
   @Override
   public void setDriveTrain(String driveTrain) {
-    System.out.println(driveTrain);
+
+    this.driveTrain = driveTrain;
   }
 
   @Override
   public void setEngineType(String engineType) {
-    System.out.println(engineType);
+
+    this.engineType = engineType;
   }
 
   @Override
   public String toString() {
-    return "ManufacturedEngine{" +
-        "engineManufacturer='" + engineManufacturer + '\'' +
-        ", engineManufacturedDate=" + engineManufacturedDate +
-        ", engineMake='" + engineMake + '\'' +
-        ", engineModel='" + engineModel + '\'' +
-        ", engineCylinders=" + engineCylinders +
-        ", engineType='" + engineType + '\'' +
-        ", driveTrain='" + driveTrain + '\'' +
-        '}';
+    return "Engine Manufacturer : " + engineManufacturer + "\n" +
+        "Engine Manufactured : " + engineManufacturedDate + "\n" +
+        "Engine Make : " + engineMake + "\n" +
+        "Engine Model : " + engineModel + "\n" +
+        "Engine Type : " + engineType + "\n" +
+        "Engine Cylinders : " + engineCylinders + "\n" +
+        "Drive Train : " + driveTrain;
   }
 }
